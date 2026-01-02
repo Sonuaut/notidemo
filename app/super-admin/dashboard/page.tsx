@@ -9,6 +9,8 @@ import {
 } from "@/lib/superadmin/dashboard";
 import SuperAdminPlansDialog from "@/components/super-admin/plans/SuperAdminPlansDialog";
 
+export const dynamic = 'force-dynamic';
+
 export default async function SuperAdminDashboard() {
   const dashboardData = await fetchSuperAdminDashboardData();
   const subscriptionStats = await fetchSubscriptionStats();
